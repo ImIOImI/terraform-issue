@@ -1,0 +1,12 @@
+db-name = "Dev-db"
+db-server = "fake-sql-server"
+db-user = "admin"
+db-pass = "1337H@x0rPassword"
+hub-vnet-location = "East US 2"
+hub-vnet-resource-group = "hub-vnet-rg"
+username = "developer"
+password = "1337H@x0rPassword"
+prefix-hub-nva = "hub-nva"
+prefix-hub-vnet = "hub-vnet"
+vmsize = "Standard_DS1_v2"
+
