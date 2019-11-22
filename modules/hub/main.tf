@@ -112,14 +112,6 @@ resource "azurerm_sql_elasticpool" "hub-sql-server-pool" {
   pool_size           = 5000
 }
 
-resource "azurerm_sql_firewall_rule" "test" {
-  name                = "Troy at Home"
-  resource_group_name = azurerm_resource_group.hub-vnet-rg.name
-  server_name         = azurerm_sql_server.hub-sql-server.name
-  start_ip_address    = "72.198.116.138"
-  end_ip_address      = "72.198.116.138"
-}
-
 resource "azurerm_sql_firewall_rule" "class-a-rule" {
   name                = "Class A Private Network"
   resource_group_name = azurerm_resource_group.hub-vnet-rg.name
