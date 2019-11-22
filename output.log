@@ -1,0 +1,385 @@
+2019/11/22 08:12:51 [INFO] Terraform version: 0.12.16
+2019/11/22 08:12:51 [INFO] Go runtime version: go1.12.13
+2019/11/22 08:12:51 [INFO] CLI args: []string{"C:\\Users\\tknapp\\bin\\terraform.exe", "plan"}
+2019/11/22 08:12:51 [DEBUG] Attempting to open CLI config file: C:\Users\tknapp\AppData\Roaming\terraform.rc
+2019/11/22 08:12:51 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/11/22 08:12:51 [INFO] CLI command args: []string{"plan"}
+2019/11/22 08:12:51 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2019/11/22 08:12:51 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2019/11/22 08:12:51 [DEBUG] New state was assigned lineage "56346d89-b923-3518-133c-acb6bc4df3ad"
+2019/11/22 08:12:51 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2019/11/22 08:12:51 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2019/11/22 08:12:51 [DEBUG] checking for provider in "."
+2019/11/22 08:12:51 [DEBUG] checking for provider in "C:\\Users\\tknapp\\bin"
+2019/11/22 08:12:51 [DEBUG] checking for provider in ".terraform\\plugins\\windows_amd64"
+2019/11/22 08:12:51 [DEBUG] found provider "terraform-provider-azurerm_v1.36.1_x4.exe"
+2019/11/22 08:12:51 [DEBUG] found valid plugin: "azurerm", "1.36.1", "C:\\repos\\terraform-azurerm-infra\\SafeCopy\\dev\\.terraform\\plugins\\windows_amd64\\terraform-provider-azurerm_v1.36.1_x4.exe"
+2019/11/22 08:12:51 [DEBUG] checking for provisioner in "."
+2019/11/22 08:12:51 [DEBUG] checking for provisioner in "C:\\Users\\tknapp\\bin"
+2019/11/22 08:12:51 [DEBUG] checking for provisioner in ".terraform\\plugins\\windows_amd64"
+2019/11/22 08:12:51 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2019/11/22 08:12:51 [INFO] backend/local: starting Plan operation
+2019/11/22 08:12:51 [TRACE] backend/local: requesting state manager for workspace "default"
+2019/11/22 08:12:51 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2019/11/22 08:12:51 [TRACE] backend/local: requesting state lock for workspace "default"
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: locking terraform.tfstate using LockFileEx
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2019/11/22 08:12:53 [TRACE] backend/local: reading remote state for workspace "default"
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2019/11/22 08:12:53 [TRACE] statemgr.Filesystem: read nil snapshot
+2019/11/22 08:12:53 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2019/11/22 08:12:53 [TRACE] backend/local: building context for current working directory
+2019/11/22 08:12:53 [TRACE] terraform.NewContext: starting
+2019/11/22 08:12:53 [TRACE] terraform.NewContext: resolving provider version selections
+2019/11/22 08:12:54 [TRACE] terraform.NewContext: loading provider schemas
+2019/11/22 08:12:54 [TRACE] LoadSchemas: retrieving schema for provider type "azurerm"
+2019-11-22T08:12:54.192-0600 [INFO]  plugin: configuring client automatic mTLS
+2019-11-22T08:12:54.218-0600 [DEBUG] plugin: starting plugin: path=C:\repos\terraform-azurerm-infra\SafeCopy\dev\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.36.1_x4.exe args=[C:\repos\terraform-azurerm-infra\SafeCopy\dev\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.36.1_x4.exe]
+2019-11-22T08:12:54.238-0600 [DEBUG] plugin: plugin started: path=C:\repos\terraform-azurerm-infra\SafeCopy\dev\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.36.1_x4.exe pid=25876
+2019-11-22T08:12:54.238-0600 [DEBUG] plugin: waiting for RPC address: path=C:\repos\terraform-azurerm-infra\SafeCopy\dev\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.36.1_x4.exe
+2019-11-22T08:12:54.299-0600 [DEBUG] plugin.terraform-provider-azurerm_v1.36.1_x4.exe: [DEBUG] Registering Data Sources for "Compute"..
+2019-11-22T08:12:54.299-0600 [DEBUG] plugin.terraform-provider-azurerm_v1.36.1_x4.exe: [DEBUG] Registering Resources for "Compute"..
+2019-11-22T08:12:54.303-0600 [INFO]  plugin.terraform-provider-azurerm_v1.36.1_x4.exe: configuring server automatic mTLS: timestamp=2019-11-22T08:12:54.301-0600
+2019-11-22T08:12:54.333-0600 [DEBUG] plugin.terraform-provider-azurerm_v1.36.1_x4.exe: plugin address: network=tcp address=127.0.0.1:10000 timestamp=2019-11-22T08:12:54.333-0600
+2019-11-22T08:12:54.333-0600 [DEBUG] plugin: using plugin: version=5
+2019/11/22 08:12:54 [TRACE] GRPCProvider: GetSchema
+2019/11/22 08:12:54 [TRACE] GRPCProvider: Close
+2019-11-22T08:12:54.440-0600 [DEBUG] plugin: plugin process exited: path=C:\repos\terraform-azurerm-infra\SafeCopy\dev\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.36.1_x4.exe pid=25876
+2019-11-22T08:12:54.440-0600 [DEBUG] plugin: plugin exited
+2019/11/22 08:12:54 [TRACE] terraform.NewContext: complete
+2019/11/22 08:12:54 [TRACE] backend/local: finished building terraform.Context
+2019/11/22 08:12:54 [TRACE] backend/local: requesting interactive input, if necessary
+2019/11/22 08:12:54 [TRACE] Context.Input: Prompting for provider arguments
+2019/11/22 08:12:54 [TRACE] Context.Input: Provider provider.azurerm declared at main.tf:1,1-19
+2019/11/22 08:12:54 [TRACE] Context.Input: Input for provider.azurerm: map[string]cty.Value{}
+2019/11/22 08:12:54 [TRACE] backend/local: running validation operation
+2019/11/22 08:12:54 [INFO] terraform: building graph: GraphTypeValidate
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path:
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-gateway-subnet
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-mgmt
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-sql-server
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-sql-server-pool
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-vm
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-vnet
+2019/11/22 08:12:54 [TRACE] ConfigTransformer: Starting for path: hub-vnet-rg
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+module.hub-gateway-subnet.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+------
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.LocalTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.OutputTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.StateTransformer
+2019/11/22 08:12:54 [TRACE] StateTransformer: state is empty, so nothing to do
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_sql_firewall_rule.class-a-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:123,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-mgmt.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet-rg.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_sql_firewall_rule.test" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:115,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_virtual_machine.hub-vm" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:56,1-44
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-b-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:131,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vnet.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_subnet.hub-gateway-subnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:17,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_resource_group.hub-vnet-rg" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:1,1-48
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_subnet.hub-dmz" (*terraform.NodeValidatableResource
+) config from ..\modules\hub\main.tf:31,1-36
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-vm.azurerm_sql_firewall_rule.class-c-rule" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:139,1-52
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server.azurerm_sql_elasticpool.hub-sql-server-pool" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:103,1-57
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-sql-server-pool.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_virtual_network.hub-vnet" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:6,1-46
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_subnet.hub-mgmt" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:24,1-37
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_network_interface.hub-nic" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:38,1-47
+2019/11/22 08:12:54 [TRACE] AttachResourceConfigTransformer: attaching to "module.hub-gateway-subnet.azurerm_sql_server.hub-sql-server" (*terraform.NodeValidatableResource) config from ..\modules\hub\main.tf:93,1-47
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+module.hub-gateway-subnet.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-gateway-subnet.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-mgmt.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-sql-server-pool.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.class-b-rule - *teError: rraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-sql-server.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-vm.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-vnet-rg.azurerm_virtual_network.hub-vnet - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_network_interface.hub-nic - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_resource_group.hub-vnet-rg - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_elasticpool.hub-sql-server-pool - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.class-a-rule - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.class-b-rule - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.class-c-rule - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_firewall_rule.test - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_sql_server.hub-sql-server - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_subnet.hub-dmz - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_subnet.hub-gateway-subnet - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_subnet.hub-mgmt - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_virtual_machine.hub-vm - *terraform.NodeValidatableResource
+module.hub-vnet.azurerm_virtuMissing required argumental_network.hub-vnet - *terraform.NodeValidatableResource
+var.db-name - *terraform.NodeRootVariable
+var.db-pass - *terraform.NodeRootVariable
+var.db-server - *terraform.NodeRootVariable
+var.db-user - *terraform.NodeRootVariable
+var.hub-vnet-location - *terraform.NodeRootVariable
+var.hub-vnet-resource-group - *terraform.NodeRootVariable
+var.password - *terraform.NodeRootVariable
+var.prefix-hub-nva - *terraform.NodeRootVariable
+var.prefix-hub-vnet - *terraform.NodeRootVariable
+var.username - *terraform.NodeRootVariable
+var.vmsize - *terraform.NodeRootVariable
+------
+
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2019/11/22 08:12:54 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2019/11/22 08:12:54 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2019/11/22 08:12:54 [TRACE] statemgr.Filesystem: unlocked by closing terraform.tfstate
